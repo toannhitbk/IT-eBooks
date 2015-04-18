@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "HomeViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    // create an instance of the view controller you want to be displayed first
+    HomeViewController *firstViewController = [[HomeViewController alloc] initWithNibName:@"HomeViewController" bundle:nil];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:firstViewController];
+    // set it as the root view controller of the application's window
+    [self.window setRootViewController:navi];
+    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

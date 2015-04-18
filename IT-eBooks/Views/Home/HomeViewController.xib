@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController">
+            <connections>
+                <outlet property="editContentView" destination="lWc-za-w29" id="z7q-ys-u7T"/>
+                <outlet property="editScrollView" destination="vPQ-TI-Lm0" id="Z70-hE-3fK"/>
+                <outlet property="tfTitle" destination="yBR-XM-ldz" id="mWa-I9-V3M"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vPQ-TI-Lm0">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lWc-za-w29">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="backround.png" translatesAutoresizingMaskIntoConstraints="NO" id="2nz-i4-RM7">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="yec-al-BE0">
+                                    <rect key="frame" x="65" y="129" width="190" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="1GL-EV-6Du"/>
+                                        <constraint firstAttribute="width" constant="190" id="T4R-mS-t81"/>
+                                    </constraints>
+                                </imageView>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="  Search Book" minimumFontSize="17" background="uitextfield.png" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yBR-XM-ldz">
+                                    <rect key="frame" x="35" y="267" width="250" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="Efw-q0-Mks"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="-1" id="qAB-4Z-sVF"/>
+                                    </connections>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDw-U3-kDK">
+                                    <rect key="frame" x="35" y="325" width="250" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="VIs-sn-kTt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                    <state key="normal" backgroundImage="buttonSearch.png">
+                                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="btnSearchEbooks:" destination="-1" eventType="touchUpInside" id="Qhh-h9-UPU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="yBR-XM-ldz" firstAttribute="top" secondItem="yec-al-BE0" secondAttribute="bottom" constant="88" id="El7-B5-jZA"/>
+                                <constraint firstItem="yec-al-BE0" firstAttribute="leading" secondItem="lWc-za-w29" secondAttribute="leading" constant="65" id="GiL-uL-MoB"/>
+                                <constraint firstAttribute="trailing" secondItem="xDw-U3-kDK" secondAttribute="trailing" constant="35" id="NEB-Ry-Jd4"/>
+                                <constraint firstAttribute="trailing" secondItem="yec-al-BE0" secondAttribute="trailing" constant="65" id="WU2-0R-IpT"/>
+                                <constraint firstItem="xDw-U3-kDK" firstAttribute="top" secondItem="yBR-XM-ldz" secondAttribute="bottom" constant="18" id="XKJ-Lc-VBj"/>
+                                <constraint firstItem="yBR-XM-ldz" firstAttribute="leading" secondItem="lWc-za-w29" secondAttribute="leading" constant="35" id="boC-Ha-crr"/>
+                                <constraint firstItem="2nz-i4-RM7" firstAttribute="leading" secondItem="lWc-za-w29" secondAttribute="leading" id="dLv-Dd-34M"/>
+                                <constraint firstItem="yec-al-BE0" firstAttribute="top" secondItem="lWc-za-w29" secondAttribute="top" constant="129" id="ePJ-XY-co1"/>
+                                <constraint firstAttribute="trailing" secondItem="2nz-i4-RM7" secondAttribute="trailing" id="mfK-3g-3v6"/>
+                                <constraint firstItem="xDw-U3-kDK" firstAttribute="leading" secondItem="lWc-za-w29" secondAttribute="leading" constant="35" id="qAg-ST-neG"/>
+                                <constraint firstAttribute="trailing" secondItem="yBR-XM-ldz" secondAttribute="trailing" constant="35" id="qic-Qh-UGt"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lWc-za-w29" firstAttribute="leading" secondItem="vPQ-TI-Lm0" secondAttribute="leading" id="1of-4o-5MR"/>
+                        <constraint firstAttribute="bottom" secondItem="lWc-za-w29" secondAttribute="bottom" id="9OX-EW-2HK"/>
+                        <constraint firstItem="lWc-za-w29" firstAttribute="top" secondItem="vPQ-TI-Lm0" secondAttribute="top" id="ZJa-yu-OYD"/>
+                        <constraint firstAttribute="centerX" secondItem="lWc-za-w29" secondAttribute="centerX" id="d7u-Z2-HTY"/>
+                        <constraint firstAttribute="trailing" secondItem="lWc-za-w29" secondAttribute="trailing" id="lMN-1N-pRt"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="vPQ-TI-Lm0" secondAttribute="centerX" id="Rzu-6J-sC3"/>
+                <constraint firstItem="vPQ-TI-Lm0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eDa-Hx-RIo"/>
+                <constraint firstItem="vPQ-TI-Lm0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="gn5-Up-cMV"/>
+                <constraint firstAttribute="bottom" secondItem="vPQ-TI-Lm0" secondAttribute="bottom" id="kYh-Hv-vl9"/>
+                <constraint firstAttribute="trailing" secondItem="vPQ-TI-Lm0" secondAttribute="trailing" id="nhM-I5-yn2"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="394" y="388"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backround.png" width="640" height="1136"/>
+        <image name="buttonSearch.png" width="500" height="60"/>
+        <image name="logo.png" width="343" height="94"/>
+        <image name="uitextfield.png" width="500" height="77"/>
+    </resources>
+</document>

@@ -4,20 +4,25 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>IT-eBooks.xcscheme</key>
+		<key>Pods-AFNetworking.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3496AC021ABD765F00AF8846</key>
+		<key>88A810879B8857613DC715F3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3496AC1B1ABD765F00AF8846</key>
+		<key>9FE692249CF40E45FBA3F2EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
